@@ -1,0 +1,35 @@
+table {
+  margin: 50px auto;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+th,
+td {
+  width: 150px;
+  border: none;
+  padding: 20px;
+}
+th {
+  background-color:#5499C7;
+  color: #fff;
+}
+tr {
+  background-color: #EAEDED;
+}
+.container button {
+  background-color: #EAEDED;
+  font-size: 30px;
+  border: none;
+}
+.toggleBtn {
+  color: #1E8449;
+}
+.deleteBtn {
+  color: #e74c3c;
+}
+
+.links{
+    text-decoration: none;
+    
+}

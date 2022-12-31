@@ -1,35 +1,33 @@
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
 import Home from "./Home";
 import Login from "./Login";
-import PrivateRoutes from "./PrivateRoutes";
+import SingleTodo from "./SingleTodo";
 import Todo from "./Todo";
-import Todoitem from "./Todoitem";
-function Allroutes() {
+function AllRoutes() {
   return (
     <div>
-        
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-
+        <Route path={"/"} element={<Home />} />
+        <Route path={"/login"} element={<Login />} />
         <Route
-          path="/todo"
+          path={"/todo"}
           element={
-            <PrivateRoutes>
+            <PrivateRoute>
               <Todo />
-            </PrivateRoutes>
+            </PrivateRoute>
           }
         />
         <Route
-          path="/todo/:id"
+          path={`/todo/:id`}
           element={
-            <PrivateRoutes>
-              <Todoitem />
-            </PrivateRoutes>
+            <PrivateRoute>
+              <SingleTodo />
+            </PrivateRoute>
           }
         />
       </Routes>
     </div>
   );
 }
-export default Allroutes;
+export default AllRoutes;
