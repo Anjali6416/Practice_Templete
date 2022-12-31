@@ -1,9 +1,8 @@
-
-function Todo(){
-    return (
-        <div>
-
-        </div>
-    )
+function Todo() {
+  return (
+    <div>
+      <h1>Todo Page</h1>
+    </div>
+  );
 }
 export default Todo;
