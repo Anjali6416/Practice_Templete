@@ -22,3 +22,4 @@ const todoReducer = (state = initstate, { type, payload }) => {
     }
   }
 };
+export default todoReducer;
