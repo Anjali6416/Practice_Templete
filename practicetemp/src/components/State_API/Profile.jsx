@@ -1,24 +1,24 @@
-
+import "./Profile.css"
 function Profile(){
     return(
         <div className="card">
-        <div>
-         <img src="" alt="" width="100%" height="100%" />
+        <div style={{width:"35%"}}>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFqB1hWp2PbYtLr_Ll5ldjdc48TBpen2ANdy67d-n0_NmOLUNaFDGLUXx4kPSfQiK_AM&usqp=CAU" alt="" width="100%" height="90%"  />
         </div>
-        <div>
+        <div style={{width:"65%" ,padding:"30px"}}>
          <dl>
             <dt>
                 <b>User Name</b>
             </dt>
-            <dd></dd>
+            <dd>Anjali</dd>
             <dt>
                 <b>City</b>
             </dt>
-            <dd></dd>
+            <dd>Delhi</dd>
             <dt>
                 <b> Gender</b>
             </dt>
-            <dd></dd>
+            <dd>Female</dd>
             <dt>
                 <b>Description</b>
             </dt>
@@ -30,7 +30,9 @@ function Profile(){
             Iste necessitatibus repudiandae eius aperiam iure adipisci sit consectetur, natus quam ut voluptate blanditiis corporis voluptatibus! Cumque omnis veritatis nulla facilis, non perferendis dolor voluptas, praesentium, et vel corporis! Ad.
             molestiae velit? Necessitatibus doloremque odit deserunt aliquam aspernatur? Dolorem, sed dolorum!</dd>
          </dl>
+         <button>submit</button>
         </div>
+        
         </div>
     )
 }

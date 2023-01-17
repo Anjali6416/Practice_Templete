@@ -1,1 +1,9 @@
 
+.card{
+    margin: 50px auto;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    box-shadow:0 0 solid black ;
+    text-align: left;
+}
