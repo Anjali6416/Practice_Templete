@@ -1,5 +1,12 @@
 import "./Profile.css"
+import { useState } from "react"
 function Profile(){
+    const[state,setState] =useState({
+        name:"Sun",
+        gender:"female",
+        city:"Delhi",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFqB1hWp2PbYtLr_Ll5ldjdc48TBpen2ANdy67d-n0_NmOLUNaFDGLUXx4kPSfQiK_AM&usqp=CAU"
+    })
     return(
         <div className="card">
         <div style={{width:"35%"}}>
