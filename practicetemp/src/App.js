@@ -5,12 +5,14 @@ import Nav from './components/State_API/Nav';
 // import Post from './components/State_API/Users/Post';
 import Profilenew from './components/State_API/LifeCycle/Profilenew';
 import CounterTittle from './components/Counter-tittle/CounterTittle';
+import Timer from './components/Timer App/Timer';
 import { useState } from 'react';
 function App() {
   const[showProfile,setProfile] = useState(true);
   return (
     <div className="App">
-      <CounterTittle/>
+      <Timer/>
+      {/* <CounterTittle/> */}
       {/* <Account/> */}
      {/* <Nav/> */}
      {/* <Profile/> */}
