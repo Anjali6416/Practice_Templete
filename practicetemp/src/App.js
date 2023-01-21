@@ -7,11 +7,13 @@ import Profilenew from './components/State_API/LifeCycle/Profilenew';
 import CounterTittle from './components/Counter-tittle/CounterTittle';
 import Timer from './components/Timer App/Timer';
 import Form from './components/Form/Form';
+import ControlledForm from './components/Form/ControlledForm';
 import { useState } from 'react';
 function App() {
   const[showProfile,setProfile] = useState(true);
   return (
     <div className="App">
+      <ControlledForm/>
       <Form/>
       {/* <Timer/> */}
       {/* <CounterTittle/> */}
