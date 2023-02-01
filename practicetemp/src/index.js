@@ -7,16 +7,14 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 // import reduxStore from "./Redux_Pipeline/Store";
 // import store from "./redux/Store";
-
+import myStore from "./components/Redux/ReduxStore/Store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
  
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-   
-  </React.StrictMode>
+  <Provider store={myStore}>
+    <App />
+  </Provider>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

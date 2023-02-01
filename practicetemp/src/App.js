@@ -3,18 +3,29 @@ import Nav from './components/State_API/Nav';
 // import Profile from './components/State_API/Profile';
 // import Account from './components/State_API/Account/Account';
 // import Post from './components/State_API/Users/Post';
+import Input from './components/Redux/Input';
+import Result from './components/Redux/Result';
+import City from './components/Redux/City';
+
 import Profilenew from './components/State_API/LifeCycle/Profilenew';
 import CounterTittle from './components/Counter-tittle/CounterTittle';
 import Timer from './components/Timer App/Timer';
 import Form from './components/Form/Form';
 import ControlledForm from './components/Form/ControlledForm';
+// import ProductForm from './components/IA-PS-form/ProductForm';
 import { useState } from 'react';
+// import Jewelery from './components/Route-II/Jewelery';
 function App() {
-  const[showProfile,setProfile] = useState(true);
+  // const[showProfile,setProfile] = useState(true);
   return (
     <div className="App">
-      <ControlledForm/>
-      <Form/>
+      <Input/>
+      <City/>
+      <Result/>
+      {/* <Jewelery/> */}
+      {/* <ProductForm/> */}
+      {/* <ControlledForm/> */}
+      {/* <Form/> */}
       {/* <Timer/> */}
       {/* <CounterTittle/> */}
       {/* <Account/> */}
